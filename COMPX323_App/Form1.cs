@@ -15,6 +15,14 @@ namespace COMPX323_App
         public Form1()
         {
             InitializeComponent();
+            showForm2();
+        }
+
+        private void showForm2() {
+            this.Hide();
+            var form2 = new Form2(1, 1);
+            form2.ShowDialog();
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
