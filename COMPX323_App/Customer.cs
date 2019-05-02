@@ -10,31 +10,23 @@ namespace COMPX323_App
 {
     class Customer
     {
-        private int customerID;
+        private readonly int customerID;
         private int cartID;
-        //private List<Product> cart;
+        private List<Product> cart;
         
-        public int CustomerID { get => customerID; }
-        public int CartID { get => cartID; }
-        //public List<Product> Cart { get => cart; set => cart = value; }
-        
-        public Customer(int customerID, int cartID)
+        public Customer(int customerID)
         {
             this.customerID = customerID;
-            this.cartID = cartID;
+            cart = new List<Product>();
         }
-        /*
-        public void buildCart()
+
+        public int CustomerID => customerID;
+        public int CartID { get => cartID; set => cartID = value; }
+        internal List<Product> Cart { get => cart; set => cart = value; }
+
+        public void addProductToCart(Product product)
         {
-            try
-            {
-                Oracle.getProducts(customerID, cartID, cart);
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show("Error building cart in Customer.cs : " + e.ToString());
-            }
+            cart.Add(product);
         }
-        */
     }
 }

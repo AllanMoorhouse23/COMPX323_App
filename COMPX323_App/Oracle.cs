@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
@@ -50,7 +46,7 @@ namespace COMPX323_App
             }
         }
 
-        public List<Product> getProducts(int customerID, int cartID, List<Product> cart)
+        public static void getProducts(int customerID, List<Product> cart)
         {
             try
             {
@@ -84,12 +80,10 @@ namespace COMPX323_App
                                          dataReader.GetString(3)));
                 }
                 connection.Dispose();
-                return cart;
             }
             catch (Exception e)
             {
                 MessageBox.Show("Error building cart in Oracle.cs : " + e.ToString());
-                return null;
             }
         }
     }

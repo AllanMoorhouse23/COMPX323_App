@@ -20,7 +20,7 @@ namespace COMPX323_App
 
         private void showForm2() {
             this.Hide();
-            var form2 = new Form2(1, 1);
+            var form2 = new Form2(3);
             form2.ShowDialog();
             this.Close();
         }

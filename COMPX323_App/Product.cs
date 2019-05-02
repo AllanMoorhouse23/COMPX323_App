@@ -31,7 +31,7 @@ namespace COMPX323_App
 
         public String toString()
         {
-            return name + " " + description + " " + price + " " + quantity;
+            return name + " " + description + " " + price.ToString() + " " + quantity.ToString();
         }
     }
 }
