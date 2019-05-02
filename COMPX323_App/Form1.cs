@@ -15,21 +15,15 @@ namespace COMPX323_App
         public Form1()
         {
             InitializeComponent();
-            showForm2();
-        }
-
-        private void showForm2() {
-            this.Hide();
-            var form2 = new Form2(3);
-            form2.ShowDialog();
-            this.Close();
-        }
+        }        
 
         //method to instantiate instance of login form
         private void openLogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
             loginForm login = new loginForm();
-            login.Show();
+            login.ShowDialog();
+            this.Close();
         }
     }
 }

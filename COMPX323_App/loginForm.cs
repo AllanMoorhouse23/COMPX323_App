@@ -21,7 +21,7 @@ namespace COMPX323_App
         private void loginButton_Click(object sender, EventArgs e)
         {
             string dbusername = "SYSTEM";
-            string dbpassword = "Password";
+            string dbpassword = "";
             int id;
 
             string firstName;
@@ -31,7 +31,8 @@ namespace COMPX323_App
             var password = password_input.Text;
 
             //MessageBox.Show(email+','+password);
-            string oradb = "Data Source=localhost/orcl;User Id="+dbusername+";Password="+dbpassword+";";
+            string oradb = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMPX323_12;Password=TmBwyp7P5n;";
+            //string oradb = "Data Source=localhost/orcl;User Id="+dbusername+";Password="+dbpassword+";";
             OracleConnection conn = new OracleConnection(oradb);  // C#
             conn.Open();
 
@@ -49,6 +50,11 @@ namespace COMPX323_App
                 lastName = dr.GetString(2);
                 MessageBox.Show("Login Succesful, Welcome:\t"+firstName+" "+lastName+" ID: "+id);
                 label1.Text = "Logged in as: "+firstName+" "+lastName;
+                
+                this.Hide();
+                var form2 = new Form2(3);
+                form2.ShowDialog();
+                this.Close();                
             }
             else
             {

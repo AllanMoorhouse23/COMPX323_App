@@ -22,8 +22,8 @@ namespace COMPX323_App
             customer = new Customer(customerID);
 
             // Get Cart ID
-            string oradb = "Data Source=localhost/ORCL;User Id=SYSTEM;Password=TmBwyp7P5n;";
-            //string oradb = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMPX323_12;Password=TmBwyp7P5n;");
+            //string oradb = "Data Source=localhost/ORCL;User Id=SYSTEM;Password=password;";
+            string oradb = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMPX323_12;Password=TmBwyp7P5n;";
             OracleConnection conn = new OracleConnection(oradb);
             conn.Open();
             OracleCommand cmd = new OracleCommand();
