@@ -28,10 +28,5 @@ namespace COMPX323_App
         public decimal Price { get => price; }
         public int Quantity { get => quantity; }
         public string Description { get => description; }
-
-        public String toString()
-        {
-            return name + " " + description + " " + price.ToString() + " " + quantity.ToString();
-        }
     }
 }

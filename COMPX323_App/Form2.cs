@@ -19,11 +19,11 @@ namespace COMPX323_App
         public Form2(int customerID)
         {
             InitializeComponent();
-            //listBox1.Items.Add("Name".PadRight(20) + "Description".PadLeft(10) + "Price".PadLeft(50) + "Quantity".PadLeft(10));
             customer = new Customer(customerID);
 
-            
+            // Get Cart ID
             string oradb = "Data Source=localhost/ORCL;User Id=SYSTEM;Password=TmBwyp7P5n;";
+            //string oradb = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMPX323_12;Password=TmBwyp7P5n;");
             OracleConnection conn = new OracleConnection(oradb);
             conn.Open();
             OracleCommand cmd = new OracleCommand();
@@ -37,11 +37,12 @@ namespace COMPX323_App
             dr.Read();
             customer.CartID = dr.GetInt32(0);
 
+            //Get Products
             cmd.CommandText = "SELECT p.PRODUCT_ID, p.PRODUCT_NAME, p.PRICE, co.QUANTITY, p.PRODUCT_DESCRIPTION FROM PRODUCT p, CONTAINS co WHERE co.CART_ID = '" + customer.CartID + "' and p.PRODUCT_ID = co.PRODUCT_ID";
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                customer.Cart.Add(new Product(dr.GetInt32(0),
+                customer.addProductToCart(new Product(dr.GetInt32(0),
                                               dr.GetString(1),
                                               dr.GetDecimal(2),
                                               dr.GetInt32(3),
@@ -49,6 +50,7 @@ namespace COMPX323_App
             }
             conn.Dispose();
 
+            //Display Products
             int panelCount = 1;
             foreach (Product product in customer.Cart)
             {
@@ -99,6 +101,7 @@ namespace COMPX323_App
             
         }
 
+        // Found online to copy the properties of a control
         //https://stackoverflow.com/questions/3473597/it-is-possible-to-copy-all-the-properties-of-a-certain-control-c-window-forms
         private void copyControl(Control sourceControl, Control targetControl)
         {
