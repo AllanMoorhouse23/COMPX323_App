@@ -25,9 +25,11 @@ namespace COMPX323_App
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        //method to instantiate instance of login form
+        private void openLogin_Click(object sender, EventArgs e)
         {
-            label2.Text = "Hello World!";
+            loginForm login = new loginForm();
+            login.Show();
         }
     }
 }
