@@ -32,7 +32,7 @@ namespace COMPX323_App
         private void button1_Click(object sender, EventArgs e)
         {
             var connString = "mongodb://compx323-12:kLjU3r7NCQVoS3zTsms3@mongodb.cms.waikato.ac.nz:27017";
-        
+
             MongoClient client = new MongoClient(connString);
 
             var dbList = client.ListDatabases().ToList();
@@ -43,6 +43,14 @@ namespace COMPX323_App
                 Console.WriteLine(item);
             }
 
+        }
+
+        private void mongoLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginMongo login = new loginMongo();
+            login.ShowDialog();
+            this.Close();
         }
     }
 }

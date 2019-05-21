@@ -82,6 +82,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="loginMongo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginMongo.Designer.cs">
+      <DependentUpon>loginMongo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginMongo.resx">
+      <DependentUpon>loginMongo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
