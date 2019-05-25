@@ -13,10 +13,10 @@ using Oracle.ManagedDataAccess.Client;
 namespace COMPX323_App
 {
 
-    public partial class Form2 : Form
+    public partial class OracleHomepage : Form
     {
         private Customer customer;
-        public Form2(int customerID)
+        public OracleHomepage(int customerID)
         {
             InitializeComponent();
             customer = new Customer(customerID);

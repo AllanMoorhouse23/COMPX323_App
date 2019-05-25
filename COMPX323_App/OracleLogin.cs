@@ -11,9 +11,9 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace COMPX323_App
 {
-    public partial class loginForm : Form
+    public partial class OracleLogin : Form
     {
-        public loginForm()
+        public OracleLogin()
         {
             InitializeComponent();
         }
@@ -52,9 +52,9 @@ namespace COMPX323_App
                 label1.Text = "Logged in as: "+firstName+" "+lastName;
                 
                 this.Hide();
-                var form2 = new Form2(3);
-                form2.ShowDialog();
-                this.Close();                
+                var oracleHomepage = new OracleHomepage(id);
+                oracleHomepage.ShowDialog();
+                this.Close();
             }
             else
             {

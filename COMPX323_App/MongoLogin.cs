@@ -13,9 +13,9 @@ using MongoDB.Driver.Linq;
 
 namespace COMPX323_App
 {
-    public partial class loginMongo : Form
+    public partial class MongoLogin : Form
     {
-        public loginMongo()
+        public MongoLogin()
         {
             InitializeComponent();
         }
@@ -42,49 +42,34 @@ namespace COMPX323_App
 
             //Get Database and Collection  
             IMongoDatabase db = client.GetDatabase("Compx323-12");
-            var collection = db.GetCollection<Customer2>("customers");
+            var collection = db.GetCollection<MongoCustomer>("customers");
 
             //find customer document from customers collection in mongoDB and convert to list
-            var custDoc = collection.Find(customer => customer.email == email && customer.password == password).ToList();
-            //.ForEachAsync(customer => test(customer.fname,customer.lname,customer.id));
+            var custDoc = collection
+                .Find(customer => customer.email == email && customer.password == password)
+                .Limit(1)
+                .ToListAsync()
+                .Result;
 
-            //call login method, parse in custDoc list
-            login(custDoc);
-        }
-
-        public async void login(List<Customer2> customer)
-        {
             //if custmer doc list is empty then wrong username or password entered
-            if (customer.Count == 0)
+            if (custDoc.Count == 0)
             {
                 MessageBox.Show("Login details incorrect please check your email and password and try again...");
             }
-            else {
+            else
+            {
                 //else iterate over doc item in list and get info + login
-                foreach (var item in customer)
+                foreach (var item in custDoc)
                 {
                     Console.WriteLine(item.fname);
                     MessageBox.Show("Login Succesful, Welcome:\t" + item.fname + " " + item.lname + " ID: " + item.id);
-                }                
-            };
-        }
+                    this.Hide();
+                    var mongoHomePage = new MongoHomepage(item.id);
+                    mongoHomePage.ShowDialog();
+                    this.Close();
+                }
+            }
 
-        public class Customer2
-        {
-            public ObjectId Id { get; set; }
-            public int id { get; set; }
-            public string fname { get; set; }
-            public string lname { get; set; }
-            public string streetAdr { get; set; }
-            public string suburb { get; set; }
-            public string city { get; set; }
-            public string postcode { get; set; }
-            public string phone { get; set; }
-            public string email { get; set; }
-            public string dob { get; set; }
-            public string password { get; set; }
         }
-
     }
-
 }

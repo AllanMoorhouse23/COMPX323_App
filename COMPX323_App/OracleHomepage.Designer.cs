@@ -1,6 +1,6 @@
 ﻿namespace COMPX323_App
 {
-    partial class Form2
+    partial class OracleHomepage
     {
         /// <summary>
         /// Required designer variable.

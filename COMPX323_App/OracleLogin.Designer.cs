@@ -1,6 +1,6 @@
 ﻿namespace COMPX323_App
 {
-    partial class loginForm
+    partial class OracleLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OracleLogin));
             this.emailLabel = new System.Windows.Forms.Label();
             this.emai_input = new System.Windows.Forms.TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();

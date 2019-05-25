@@ -13,9 +13,9 @@ using MongoDB.Driver.Linq;
 
 namespace COMPX323_App
 {
-    public partial class Form1 : Form
+    public partial class index : Form
     {
-        public Form1()
+        public index()
         {
             InitializeComponent();
         }        
@@ -24,7 +24,7 @@ namespace COMPX323_App
         private void openLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginForm login = new loginForm();
+            OracleLogin login = new OracleLogin();
             login.ShowDialog();
             this.Close();
         }
@@ -48,7 +48,7 @@ namespace COMPX323_App
         private void mongoLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginMongo login = new loginMongo();
+            MongoLogin login = new MongoLogin();
             login.ShowDialog();
             this.Close();
         }

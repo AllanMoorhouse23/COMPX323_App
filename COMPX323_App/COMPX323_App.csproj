@@ -45,6 +45,7 @@
     <Reference Include="MongoDB.Driver.Core, Version=2.8.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Driver.Core.2.8.1\lib\net452\MongoDB.Driver.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.18.6.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
@@ -69,45 +70,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MongoCartItem.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MongoCustomer.cs" />
+    <Compile Include="MongoHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MongoHomepage.Designer.cs">
+      <DependentUpon>MongoHomepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="index.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginMongo.cs">
+    <Compile Include="OracleHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginMongo.Designer.cs">
-      <DependentUpon>loginMongo.cs</DependentUpon>
+    <Compile Include="OracleHomepage.Designer.cs">
+      <DependentUpon>OracleHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MongoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MongoLogin.Designer.cs">
+      <DependentUpon>MongoLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
-    <Compile Include="loginForm.cs">
+    <Compile Include="OracleLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginForm.Designer.cs">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <Compile Include="OracleLogin.Designer.cs">
+      <DependentUpon>OracleLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="MongoProducts.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MongoHomepage.resx">
+      <DependentUpon>MongoHomepage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginForm.resx">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <EmbeddedResource Include="OracleHomepage.resx">
+      <DependentUpon>OracleHomepage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginMongo.resx">
-      <DependentUpon>loginMongo.cs</DependentUpon>
+    <EmbeddedResource Include="OracleLogin.resx">
+      <DependentUpon>OracleLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MongoLogin.resx">
+      <DependentUpon>MongoLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

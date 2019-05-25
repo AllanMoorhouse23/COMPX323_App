@@ -1,6 +1,6 @@
 ﻿namespace COMPX323_App
 {
-    partial class Form1
+    partial class index
     {
         /// <summary>
         /// Required designer variable.

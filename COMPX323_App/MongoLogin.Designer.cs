@@ -1,6 +1,6 @@
 ﻿namespace COMPX323_App
 {
-    partial class loginMongo
+    partial class MongoLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginMongo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MongoLogin));
             this.loginButtonMongo = new System.Windows.Forms.Button();
             this.password_input_mongo = new System.Windows.Forms.TextBox();
             this.passwordLabelMongo = new System.Windows.Forms.Label();
