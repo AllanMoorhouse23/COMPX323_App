@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace COMPX323_App
 {
@@ -27,6 +22,14 @@ namespace COMPX323_App
         public void addProductToCart(Product product)
         {
             cart.Add(product);
+        }
+        public int getCartSize()
+        {
+            return cart.Count();
+        }
+        public Product getCartItem(int index)
+        {
+            return cart.ElementAt(index);
         }
     }
 }

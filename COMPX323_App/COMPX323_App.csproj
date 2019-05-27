@@ -70,9 +70,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MongoCartItem.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="MongoCustomer.cs" />
+    <Compile Include="MongoBrowseProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MongoBrowseProducts.Designer.cs">
+      <DependentUpon>MongoBrowseProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="MongoHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +88,12 @@
     </Compile>
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleBrowseProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OracleBrowseProducts.Designer.cs">
+      <DependentUpon>OracleBrowseProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="OracleHomepage.cs">
       <SubType>Form</SubType>
@@ -104,14 +114,19 @@
     <Compile Include="OracleLogin.Designer.cs">
       <DependentUpon>OracleLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MongoProducts.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MongoBrowseProducts.resx">
+      <DependentUpon>MongoBrowseProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MongoHomepage.resx">
       <DependentUpon>MongoHomepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OracleBrowseProducts.resx">
+      <DependentUpon>OracleBrowseProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OracleHomepage.resx">
       <DependentUpon>OracleHomepage.cs</DependentUpon>

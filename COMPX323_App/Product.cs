@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace COMPX323_App
 {
@@ -23,10 +19,31 @@ namespace COMPX323_App
             this.description = description;
         }
 
+        public Product(Product product)
+        {
+            this.productID = product.productID;
+            this.name = product.name;
+            this.price = product.price;
+            this.quantity = product.quantity;
+            this.description = product.description;
+        }
+
         public int ProductID { get => productID; }
         public string Name { get => name; }
         public decimal Price { get => price; }
         public int Quantity { get => quantity; }
         public string Description { get => description; }
+        public string toString()
+        {
+            return productID.ToString().PadLeft(2).PadRight(7)
+                + name.PadLeft(25)
+                + price.ToString("C2").PadLeft(20)
+                + quantity.ToString().PadLeft(5)
+                + (price * quantity).ToString("C2").PadLeft(5);
+        }
+        public int removeOneProductQuantity()
+        {
+            return quantity--;
+        }
     }
 }

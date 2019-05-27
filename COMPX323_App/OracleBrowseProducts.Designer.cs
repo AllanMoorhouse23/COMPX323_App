@@ -1,6 +1,6 @@
 ﻿namespace COMPX323_App
 {
-    partial class MongoHomepage
+    partial class OracleBrowseProducts
     {
         /// <summary>
         /// Required designer variable.
@@ -28,111 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonRemove3 = new System.Windows.Forms.Button();
-            this.buttonRemove2 = new System.Windows.Forms.Button();
             this.labelQuantity6 = new System.Windows.Forms.TextBox();
-            this.labelTotal6 = new System.Windows.Forms.Label();
             this.labelPrice6 = new System.Windows.Forms.Label();
             this.labelName6 = new System.Windows.Forms.Label();
             this.labelID6 = new System.Windows.Forms.Label();
-            this.buttonRemove6 = new System.Windows.Forms.Button();
             this.labelQuantity5 = new System.Windows.Forms.TextBox();
-            this.buttonRemove4 = new System.Windows.Forms.Button();
-            this.labelTotal5 = new System.Windows.Forms.Label();
             this.labelName5 = new System.Windows.Forms.Label();
             this.labelID5 = new System.Windows.Forms.Label();
-            this.buttonRemove5 = new System.Windows.Forms.Button();
             this.labelPrice5 = new System.Windows.Forms.Label();
             this.labelQuantity4 = new System.Windows.Forms.TextBox();
-            this.labelTotal4 = new System.Windows.Forms.Label();
             this.labelPrice4 = new System.Windows.Forms.Label();
             this.labelName4 = new System.Windows.Forms.Label();
             this.labelID4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelQuantity3 = new System.Windows.Forms.TextBox();
-            this.labelTotal3 = new System.Windows.Forms.Label();
             this.labelPrice3 = new System.Windows.Forms.Label();
             this.labelName3 = new System.Windows.Forms.Label();
             this.labelID3 = new System.Windows.Forms.Label();
             this.labelQuantity2 = new System.Windows.Forms.TextBox();
-            this.labelTotal2 = new System.Windows.Forms.Label();
             this.labelPrice2 = new System.Windows.Forms.Label();
             this.labelName2 = new System.Windows.Forms.Label();
             this.labelID2 = new System.Windows.Forms.Label();
             this.labelQuantity1 = new System.Windows.Forms.TextBox();
-            this.labelTotal1 = new System.Windows.Forms.Label();
             this.labelPrice1 = new System.Windows.Forms.Label();
             this.labelName1 = new System.Windows.Forms.Label();
             this.labelID1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.buttonRemove1 = new System.Windows.Forms.Button();
             this.labelNext = new System.Windows.Forms.Label();
             this.labelBack = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonRemove3
-            // 
-            this.buttonRemove3.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove3.Location = new System.Drawing.Point(695, 175);
-            this.buttonRemove3.Name = "buttonRemove3";
-            this.buttonRemove3.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove3.TabIndex = 62;
-            this.buttonRemove3.Text = "Remove";
-            this.buttonRemove3.UseVisualStyleBackColor = false;
-            this.buttonRemove3.Click += new System.EventHandler(this.ButtonRemove3_Click);
-            // 
-            // buttonRemove2
-            // 
-            this.buttonRemove2.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove2.Location = new System.Drawing.Point(695, 129);
-            this.buttonRemove2.Name = "buttonRemove2";
-            this.buttonRemove2.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove2.TabIndex = 61;
-            this.buttonRemove2.Text = "Remove";
-            this.buttonRemove2.UseVisualStyleBackColor = false;
-            this.buttonRemove2.Click += new System.EventHandler(this.ButtonRemove2_Click);
-            // 
             // labelQuantity6
             // 
             this.labelQuantity6.BackColor = System.Drawing.Color.White;
-            this.labelQuantity6.Location = new System.Drawing.Point(468, 232);
+            this.labelQuantity6.Location = new System.Drawing.Point(530, 231);
             this.labelQuantity6.Name = "labelQuantity6";
             this.labelQuantity6.ReadOnly = true;
             this.labelQuantity6.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity6.TabIndex = 53;
             this.labelQuantity6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelTotal6
-            // 
-            this.labelTotal6.AutoSize = true;
-            this.labelTotal6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal6.Location = new System.Drawing.Point(590, 231);
-            this.labelTotal6.Name = "labelTotal6";
-            this.labelTotal6.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal6.TabIndex = 52;
-            this.labelTotal6.Text = "$20.00";
-            // 
             // labelPrice6
             // 
             this.labelPrice6.AutoSize = true;
             this.labelPrice6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice6.Location = new System.Drawing.Point(524, 231);
+            this.labelPrice6.Location = new System.Drawing.Point(586, 230);
             this.labelPrice6.Name = "labelPrice6";
             this.labelPrice6.Size = new System.Drawing.Size(52, 18);
             this.labelPrice6.TabIndex = 51;
@@ -159,53 +113,15 @@
             this.labelID6.TabIndex = 49;
             this.labelID6.Text = "ID";
             // 
-            // buttonRemove6
-            // 
-            this.buttonRemove6.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove6.Location = new System.Drawing.Point(695, 309);
-            this.buttonRemove6.Name = "buttonRemove6";
-            this.buttonRemove6.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove6.TabIndex = 65;
-            this.buttonRemove6.Text = "Remove";
-            this.buttonRemove6.UseVisualStyleBackColor = false;
-            this.buttonRemove6.Click += new System.EventHandler(this.ButtonRemove6_Click);
-            // 
             // labelQuantity5
             // 
             this.labelQuantity5.BackColor = System.Drawing.Color.White;
-            this.labelQuantity5.Location = new System.Drawing.Point(468, 187);
+            this.labelQuantity5.Location = new System.Drawing.Point(530, 186);
             this.labelQuantity5.Name = "labelQuantity5";
             this.labelQuantity5.ReadOnly = true;
             this.labelQuantity5.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity5.TabIndex = 47;
             this.labelQuantity5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonRemove4
-            // 
-            this.buttonRemove4.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove4.Location = new System.Drawing.Point(695, 218);
-            this.buttonRemove4.Name = "buttonRemove4";
-            this.buttonRemove4.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove4.TabIndex = 63;
-            this.buttonRemove4.Text = "Remove";
-            this.buttonRemove4.UseVisualStyleBackColor = false;
-            this.buttonRemove4.Click += new System.EventHandler(this.ButtonRemove4_Click);
-            // 
-            // labelTotal5
-            // 
-            this.labelTotal5.AutoSize = true;
-            this.labelTotal5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal5.Location = new System.Drawing.Point(590, 186);
-            this.labelTotal5.Name = "labelTotal5";
-            this.labelTotal5.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal5.TabIndex = 46;
-            this.labelTotal5.Text = "$20.00";
             // 
             // labelName5
             // 
@@ -228,25 +144,11 @@
             this.labelID5.TabIndex = 43;
             this.labelID5.Text = "ID";
             // 
-            // buttonRemove5
-            // 
-            this.buttonRemove5.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove5.Location = new System.Drawing.Point(695, 263);
-            this.buttonRemove5.Name = "buttonRemove5";
-            this.buttonRemove5.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove5.TabIndex = 64;
-            this.buttonRemove5.Text = "Remove";
-            this.buttonRemove5.UseVisualStyleBackColor = false;
-            this.buttonRemove5.Click += new System.EventHandler(this.ButtonRemove5_Click);
-            // 
             // labelPrice5
             // 
             this.labelPrice5.AutoSize = true;
             this.labelPrice5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice5.Location = new System.Drawing.Point(524, 186);
+            this.labelPrice5.Location = new System.Drawing.Point(586, 185);
             this.labelPrice5.Name = "labelPrice5";
             this.labelPrice5.Size = new System.Drawing.Size(52, 18);
             this.labelPrice5.TabIndex = 45;
@@ -255,28 +157,18 @@
             // labelQuantity4
             // 
             this.labelQuantity4.BackColor = System.Drawing.Color.White;
-            this.labelQuantity4.Location = new System.Drawing.Point(468, 140);
+            this.labelQuantity4.Location = new System.Drawing.Point(530, 139);
             this.labelQuantity4.Name = "labelQuantity4";
             this.labelQuantity4.ReadOnly = true;
             this.labelQuantity4.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity4.TabIndex = 41;
             this.labelQuantity4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelTotal4
-            // 
-            this.labelTotal4.AutoSize = true;
-            this.labelTotal4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal4.Location = new System.Drawing.Point(590, 139);
-            this.labelTotal4.Name = "labelTotal4";
-            this.labelTotal4.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal4.TabIndex = 40;
-            this.labelTotal4.Text = "$20.00";
-            // 
             // labelPrice4
             // 
             this.labelPrice4.AutoSize = true;
             this.labelPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice4.Location = new System.Drawing.Point(524, 139);
+            this.labelPrice4.Location = new System.Drawing.Point(586, 138);
             this.labelPrice4.Name = "labelPrice4";
             this.labelPrice4.Size = new System.Drawing.Size(52, 18);
             this.labelPrice4.TabIndex = 39;
@@ -307,32 +199,26 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.labelQuantity6);
-            this.panel2.Controls.Add(this.labelTotal6);
             this.panel2.Controls.Add(this.labelPrice6);
             this.panel2.Controls.Add(this.labelName6);
             this.panel2.Controls.Add(this.labelID6);
             this.panel2.Controls.Add(this.labelQuantity5);
-            this.panel2.Controls.Add(this.labelTotal5);
             this.panel2.Controls.Add(this.labelPrice5);
             this.panel2.Controls.Add(this.labelName5);
             this.panel2.Controls.Add(this.labelID5);
             this.panel2.Controls.Add(this.labelQuantity4);
-            this.panel2.Controls.Add(this.labelTotal4);
             this.panel2.Controls.Add(this.labelPrice4);
             this.panel2.Controls.Add(this.labelName4);
             this.panel2.Controls.Add(this.labelID4);
             this.panel2.Controls.Add(this.labelQuantity3);
-            this.panel2.Controls.Add(this.labelTotal3);
             this.panel2.Controls.Add(this.labelPrice3);
             this.panel2.Controls.Add(this.labelName3);
             this.panel2.Controls.Add(this.labelID3);
             this.panel2.Controls.Add(this.labelQuantity2);
-            this.panel2.Controls.Add(this.labelTotal2);
             this.panel2.Controls.Add(this.labelPrice2);
             this.panel2.Controls.Add(this.labelName2);
             this.panel2.Controls.Add(this.labelID2);
             this.panel2.Controls.Add(this.labelQuantity1);
-            this.panel2.Controls.Add(this.labelTotal1);
             this.panel2.Controls.Add(this.labelPrice1);
             this.panel2.Controls.Add(this.labelName1);
             this.panel2.Controls.Add(this.labelID1);
@@ -344,28 +230,18 @@
             // labelQuantity3
             // 
             this.labelQuantity3.BackColor = System.Drawing.Color.White;
-            this.labelQuantity3.Location = new System.Drawing.Point(468, 97);
+            this.labelQuantity3.Location = new System.Drawing.Point(530, 96);
             this.labelQuantity3.Name = "labelQuantity3";
             this.labelQuantity3.ReadOnly = true;
             this.labelQuantity3.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity3.TabIndex = 35;
             this.labelQuantity3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelTotal3
-            // 
-            this.labelTotal3.AutoSize = true;
-            this.labelTotal3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal3.Location = new System.Drawing.Point(590, 96);
-            this.labelTotal3.Name = "labelTotal3";
-            this.labelTotal3.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal3.TabIndex = 34;
-            this.labelTotal3.Text = "$20.00";
-            // 
             // labelPrice3
             // 
             this.labelPrice3.AutoSize = true;
             this.labelPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice3.Location = new System.Drawing.Point(524, 96);
+            this.labelPrice3.Location = new System.Drawing.Point(586, 95);
             this.labelPrice3.Name = "labelPrice3";
             this.labelPrice3.Size = new System.Drawing.Size(52, 18);
             this.labelPrice3.TabIndex = 33;
@@ -395,28 +271,18 @@
             // labelQuantity2
             // 
             this.labelQuantity2.BackColor = System.Drawing.Color.White;
-            this.labelQuantity2.Location = new System.Drawing.Point(468, 52);
+            this.labelQuantity2.Location = new System.Drawing.Point(530, 51);
             this.labelQuantity2.Name = "labelQuantity2";
             this.labelQuantity2.ReadOnly = true;
             this.labelQuantity2.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity2.TabIndex = 29;
             this.labelQuantity2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelTotal2
-            // 
-            this.labelTotal2.AutoSize = true;
-            this.labelTotal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal2.Location = new System.Drawing.Point(590, 51);
-            this.labelTotal2.Name = "labelTotal2";
-            this.labelTotal2.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal2.TabIndex = 28;
-            this.labelTotal2.Text = "$20.00";
-            // 
             // labelPrice2
             // 
             this.labelPrice2.AutoSize = true;
             this.labelPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice2.Location = new System.Drawing.Point(524, 51);
+            this.labelPrice2.Location = new System.Drawing.Point(586, 50);
             this.labelPrice2.Name = "labelPrice2";
             this.labelPrice2.Size = new System.Drawing.Size(52, 18);
             this.labelPrice2.TabIndex = 27;
@@ -446,28 +312,18 @@
             // labelQuantity1
             // 
             this.labelQuantity1.BackColor = System.Drawing.Color.White;
-            this.labelQuantity1.Location = new System.Drawing.Point(468, 9);
+            this.labelQuantity1.Location = new System.Drawing.Point(530, 8);
             this.labelQuantity1.Name = "labelQuantity1";
             this.labelQuantity1.ReadOnly = true;
             this.labelQuantity1.Size = new System.Drawing.Size(35, 20);
             this.labelQuantity1.TabIndex = 23;
             this.labelQuantity1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelTotal1
-            // 
-            this.labelTotal1.AutoSize = true;
-            this.labelTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal1.Location = new System.Drawing.Point(590, 9);
-            this.labelTotal1.Name = "labelTotal1";
-            this.labelTotal1.Size = new System.Drawing.Size(52, 18);
-            this.labelTotal1.TabIndex = 22;
-            this.labelTotal1.Text = "$20.00";
-            // 
             // labelPrice1
             // 
             this.labelPrice1.AutoSize = true;
             this.labelPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice1.Location = new System.Drawing.Point(524, 9);
+            this.labelPrice1.Location = new System.Drawing.Point(586, 8);
             this.labelPrice1.Name = "labelPrice1";
             this.labelPrice1.Size = new System.Drawing.Size(52, 18);
             this.labelPrice1.TabIndex = 21;
@@ -499,7 +355,6 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -530,23 +385,12 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Action";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(623, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Total";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(557, 23);
+            this.label3.Location = new System.Drawing.Point(619, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 18);
             this.label3.TabIndex = 2;
@@ -557,11 +401,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(482, 23);
+            this.label2.Location = new System.Drawing.Point(555, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(41, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Quantity";
+            this.label2.Text = "Stock";
             // 
             // label1
             // 
@@ -584,22 +428,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 35);
             this.button2.TabIndex = 57;
-            this.button2.Text = "Checkout ⮚";
+            this.button2.Text = "View Cart ⮚";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // buttonRemove1
-            // 
-            this.buttonRemove1.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonRemove1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonRemove1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemove1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonRemove1.Location = new System.Drawing.Point(695, 84);
-            this.buttonRemove1.Name = "buttonRemove1";
-            this.buttonRemove1.Size = new System.Drawing.Size(84, 35);
-            this.buttonRemove1.TabIndex = 56;
-            this.buttonRemove1.Text = "Remove";
-            this.buttonRemove1.UseVisualStyleBackColor = false;
-            this.buttonRemove1.Click += new System.EventHandler(this.ButtonRemove1_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // labelNext
             // 
@@ -625,39 +456,108 @@
             this.labelBack.Text = "<Back";
             this.labelBack.Click += new System.EventHandler(this.LabelBack_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Location = new System.Drawing.Point(697, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 35);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackColor = System.Drawing.Color.ForestGreen;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Location = new System.Drawing.Point(14, 432);
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button3.Location = new System.Drawing.Point(697, 128);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 35);
-            this.button3.TabIndex = 58;
-            this.button3.Text = "Continue Shopping";
+            this.button3.Size = new System.Drawing.Size(84, 35);
+            this.button3.TabIndex = 68;
+            this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // MongoHomepage
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.ForestGreen;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Location = new System.Drawing.Point(697, 173);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 35);
+            this.button4.TabIndex = 69;
+            this.button4.Text = "Add";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.ForestGreen;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button5.Location = new System.Drawing.Point(697, 216);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(84, 35);
+            this.button5.TabIndex = 70;
+            this.button5.Text = "Add";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.ForestGreen;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button6.Location = new System.Drawing.Point(697, 263);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 35);
+            this.button6.TabIndex = 71;
+            this.button6.Text = "Add";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.ForestGreen;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button7.Location = new System.Drawing.Point(697, 308);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(84, 35);
+            this.button7.TabIndex = 72;
+            this.button7.Text = "Add";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            // 
+            // OracleBrowseProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 479);
-            this.Controls.Add(this.buttonRemove3);
-            this.Controls.Add(this.buttonRemove2);
-            this.Controls.Add(this.buttonRemove6);
-            this.Controls.Add(this.buttonRemove4);
-            this.Controls.Add(this.buttonRemove5);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.buttonRemove1);
             this.Controls.Add(this.labelNext);
             this.Controls.Add(this.labelBack);
-            this.Controls.Add(this.button3);
-            this.Name = "MongoHomepage";
-            this.Text = "Mongo Homepage";
+            this.Name = "OracleBrowseProducts";
+            this.Text = "Oracle Products";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -668,54 +568,45 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonRemove3;
-        private System.Windows.Forms.Button buttonRemove2;
         private System.Windows.Forms.TextBox labelQuantity6;
-        private System.Windows.Forms.Label labelTotal6;
         private System.Windows.Forms.Label labelPrice6;
         private System.Windows.Forms.Label labelName6;
         private System.Windows.Forms.Label labelID6;
-        private System.Windows.Forms.Button buttonRemove6;
         private System.Windows.Forms.TextBox labelQuantity5;
-        private System.Windows.Forms.Button buttonRemove4;
-        private System.Windows.Forms.Label labelTotal5;
         private System.Windows.Forms.Label labelName5;
         private System.Windows.Forms.Label labelID5;
-        private System.Windows.Forms.Button buttonRemove5;
         private System.Windows.Forms.Label labelPrice5;
         private System.Windows.Forms.TextBox labelQuantity4;
-        private System.Windows.Forms.Label labelTotal4;
         private System.Windows.Forms.Label labelPrice4;
         private System.Windows.Forms.Label labelName4;
         private System.Windows.Forms.Label labelID4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox labelQuantity3;
-        private System.Windows.Forms.Label labelTotal3;
         private System.Windows.Forms.Label labelPrice3;
         private System.Windows.Forms.Label labelName3;
         private System.Windows.Forms.Label labelID3;
         private System.Windows.Forms.TextBox labelQuantity2;
-        private System.Windows.Forms.Label labelTotal2;
         private System.Windows.Forms.Label labelPrice2;
         private System.Windows.Forms.Label labelName2;
         private System.Windows.Forms.Label labelID2;
         private System.Windows.Forms.TextBox labelQuantity1;
-        private System.Windows.Forms.Label labelTotal1;
         private System.Windows.Forms.Label labelPrice1;
         private System.Windows.Forms.Label labelName1;
         private System.Windows.Forms.Label labelID1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button buttonRemove1;
         private System.Windows.Forms.Label labelNext;
         private System.Windows.Forms.Label labelBack;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
